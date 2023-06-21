@@ -15,13 +15,21 @@ html {
     margin: 0 auto;
 }
 
-header {
+header, footer {
     background-color: #609;
     color: #fff;
     padding-top: 1rem;
 }
 
-header > .container {
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
@@ -99,7 +107,7 @@ section p {
     margin: 1rem 0;
 }
 
-.lista-veiculos li button {
+button {
     display: block;
     width: 100%;
     padding: 0.5rem;
@@ -126,3 +134,38 @@ section p {
     font-size: 0.9375rem;
 }
 
+form {
+    max-width: 22.5rem;
+}
+.form-campo {
+    margin-bottom: 1rem;
+}
+
+.form-campo label {
+    font-weight: 700;
+    display: block;
+}
+
+.form-campo input, .form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 7.5rem;
+}
+
+form button {
+    max-width: 7.5rem;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+footer li img {
+    height: 2rem;
+}
