@@ -107,6 +107,10 @@ section p {
     margin: 1rem 0;
 }
 
+.lista-veiculos li button {
+    margin-top: 1rem;
+}
+
 button {
     display: block;
     width: 100%;
